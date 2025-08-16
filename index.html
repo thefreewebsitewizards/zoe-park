@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a Twin Thing | Zoe - Parenting Coach & Content Creator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="Assets/logo.JPG" alt="It's a Twin Thing Logo" class="h-20 mr-3">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-brown">Home</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-brown">About</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-brown">Services</a>
+                <a href="#blog" class="nav-link text-gray-700 hover:text-brown">Blog</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-brown">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-brown focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="#home" class="nav-link py-2 text-gray-700 hover:text-brown">Home</a>
+                <a href="#about" class="nav-link py-2 text-gray-700 hover:text-brown">About</a>
+                <a href="#services" class="nav-link py-2 text-gray-700 hover:text-brown">Services</a>
+                <a href="#blog" class="nav-link py-2 text-gray-700 hover:text-brown">Blog</a>
+                <a href="#contact" class="nav-link py-2 text-gray-700 hover:text-brown">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="home" class="relative h-screen flex items-center justify-center section-bg-brown">
+            <div class="absolute inset-0 bg-contain bg-left bg-no-repeat opacity-70" style="background-image: url('Assets/hero.JPG');"></div>
+            <div class="hero-overlay absolute inset-0"></div>
+            <div class="container mx-auto px-4 relative z-10 text-white h-full">
+                <div class="flex items-center justify-center md:justify-start h-full">
+                    <div class="hidden md:block md:w-1/2"></div>
+                    <div class="w-full md:w-1/2 flex justify-center items-center px-4 md:px-8">
+                        <div class="text-center max-w-lg">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4">It's a Twin Thing</h1>
+                            <h2 class="text-xl md:text-2xl mb-8">Parenting, Coaching & Content Creation</h2>
+                            <p class="text-lg md:text-xl mb-8">Real-life stories, expert support, and content that connects.</p>
+                            <div class="flex flex-col md:flex-row justify-center gap-4">
+                                <a href="#services" class="btn-primary bg-pink text-brown px-6 py-3 rounded-full font-bold">Explore Services</a>
+                                <a href="#blog" class="btn-primary bg-white text-brown px-6 py-3 rounded-full font-bold">Read the Blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="py-12 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <a href="#services" class="bg-sage-green bg-opacity-20 p-6 rounded-lg text-center hover:shadow-lg transition-all">
+                        <div class="text-4xl text-sage mb-4"><i class="fas fa-hands-helping"></i></div>
+                        <h3 class="text-xl font-bold text-brown mb-2">Coaching</h3>
+                        <p class="text-gray-600">Personalized parenting support</p>
+                    </a>
+                    <a href="#services" class="bg-muted-blue bg-opacity-20 p-6 rounded-lg text-center hover:shadow-lg transition-all">
+                        <div class="text-4xl text-blue mb-4"><i class="fas fa-camera"></i></div>
+                        <h3 class="text-xl font-bold text-brown mb-2">Content Creation</h3>
+                        <p class="text-gray-600">Authentic family content</p>
+                    </a>
+                    <a href="#blog" class="bg-soft-pink bg-opacity-20 p-6 rounded-lg text-center hover:shadow-lg transition-all">
+                        <div class="text-4xl text-pink mb-4"><i class="fas fa-book-open"></i></div>
+                        <h3 class="text-xl font-bold text-brown mb-2">Blog</h3>
+                        <p class="text-gray-600">Parenting stories & tips</p>
+                    </a>
+                    <a href="#contact" class="bg-earthy-brown bg-opacity-20 p-6 rounded-lg text-center hover:shadow-lg transition-all">
+                        <div class="text-4xl text-brown mb-4"><i class="fas fa-envelope"></i></div>
+                        <h3 class="text-xl font-bold text-brown mb-2">Contact</h3>
+                        <p class="text-gray-600">Let's connect</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-16 section-bg-sage">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">About Zoe</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="md:w-1/2">
+                        <img src="Assets/zoe.JPG" alt="Zoe with her twins" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-6 md:p-8">
+                        <blockquote class="text-xl italic text-sage mb-6">
+                            "At the heart of everything I do is one goal: to help parents feel less alone, more confident, and ready to enjoy the magic (and chaos!) that family life brings."
+                        </blockquote>
+                        <p class="text-gray-700 mb-4">Hi, I'm Zoe a mum to twin girls, content creator, and twin parenting coach.</p>
+                        <p class="text-gray-700 mb-4">I started my journey online to share the reality of life with twins — the beautiful, the challenging, and the downright hilarious moments that only fellow parents will understand. Over time, my little corner of the internet has grown into a supportive, engaged community of parents and families who trust me for honest recommendations, practical tips, and a healthy dose of real-life storytelling.</p>
+                        <p class="text-gray-700 mb-4">I wear a few hats:</p>
+                        <ul class="text-gray-700 mb-4 ml-4 space-y-2">
+                            <li><strong>Twin Parenting Coach</strong> — helping expectant and new twin parents prepare, adapt, and thrive.</li>
+                            <li><strong>Content Creator</strong> — working with brands I truly believe in to create engaging content that connects with parents.</li>
+                            <li><strong>Blogger & Storyteller</strong> — sharing relatable insights, product reviews, and behind-the-scenes family life.</li>
+                        </ul>
+                        <p class="text-gray-700">Whether you're here for support, inspiration, or just to find your next "must-have" recommendation, welcome — you're in the right place.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-brown mb-12">My Services</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                    <!-- Twin Parenting Coaching Card -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-brown" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 11.8 12.8 14 10 14S5 11.8 5 9V7L3 7V9C3 12.9 6.1 16 10 16S17 12.9 17 9Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-brown">Twin Parenting Coaching</h3>
+                        </div>
+                        
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Personalised Support for Twin Parents
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Becoming a parent to twins is a magical, life-changing journey. But it can also feel overwhelming at times. My Twin Parenting Coaching Call is designed to give you the clarity, confidence, and practical strategies you need to navigate pregnancy, birth, and the first years with twins.
+                        </p>
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            Whether you're expecting twins or already in the thick of twin parent life, we'll cover topics such as:
+                        </p>
+                        
+                        <div class="mb-6">
+                            <p class="text-brown font-semibold text-lg mb-4">£65 / 1 hour session</p>
+                            
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Preparing for life with two newborns
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Feeding routines and sleep strategies
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Potty training
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Managing daily life with twins
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Juggling parenting with self-care
+                                </li>
+                            </ul>
+                            <p class="text-gray-700 mt-4 leading-relaxed">
+                                These sessions are relaxed, friendly, and completely tailored to your needs — so you'll leave feeling supported, reassured, and ready for the next stage of your journey.
+                            </p>
+                        </div>
+                        
+                        <a href="#" id="coachingBtn" class="w-full bg-brown text-white py-3 px-6 rounded-full font-semibold hover:bg-brown-dark transition-colors duration-300 text-center inline-block" onclick="showComingSoonModal(); return false;">
+                            Book a Coaching Call
+                        </a>
+                    </div>
+                    
+                    <!-- Content Creation Card -->
+                    <div class="bg-gray-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                <svg class="w-8 h-8 text-brown" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM17 12H15V14H17V12ZM13 12H11V14H13V12ZM9 12H7V14H9V12Z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-brown">Content Creation</h3>
+                        </div>
+                        
+                        <p class="text-gray-700 mb-6 leading-relaxed">
+                            With an engaged audience of parents and families across Instagram, YouTube, and TikTok, I create high-quality, story-driven content that connects. My followers trust my recommendations because I only share products and experiences I genuinely love and believe in.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <p class="text-brown font-semibold text-lg mb-4">Content creation services include:</p>
+                            
+                            <ul class="space-y-3 text-gray-700">
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Sponsored Instagram posts, reels, and stories
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    YouTube features, vlogs, and reviews
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    TikTok videos tailored to trending formats
+                                </li>
+                                <li class="flex items-center">
+                                    <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    Honest product and service reviews
+                                </li>
+                            </ul>
+                            <p class="text-gray-700 mt-4 leading-relaxed">
+                                Whether you're a family-focused brand, lifestyle company, or service provider, I'll bring your product to life in a way that resonates with parents and inspires action.
+                            </p>
+                        </div>
+                        
+                        <button id="workBtn" class="w-full bg-brown text-white py-3 px-6 rounded-full font-semibold hover:bg-brown-dark transition-colors duration-300" onclick="openModal()">
+                            Work With Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-20 section-bg-blue relative overflow-hidden">
+            <!-- Background decoration -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-20 w-40 h-40 bg-pink rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container mx-auto px-4 relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Blog Posts</h2>
+                    <p class="text-gray-700 text-lg max-w-2xl mx-auto">Discover insights, tips, and stories from my journey as a twin mom and content creator</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16" id="blog-posts">
+                    <!-- Blog posts will be loaded here dynamically -->
+                </div>
+                
+                <div class="text-center">
+                    <a href="https://www.instagram.com/its_a_twin_thing_uk/" target="_blank" rel="noopener noreferrer" class="modern-btn bg-blue text-white px-8 py-4 rounded-2xl font-bold inline-flex items-center gap-3 hover:bg-opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <span>View All Posts</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-gradient-to-br from-pink-200 to-pink-300 relative overflow-hidden">
+            <div class="container mx-auto px-4 max-w-6xl relative z-10">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl md:text-4xl font-bold text-brown mb-4">
+                        Let's Connect — I'd love to hear from you
+                    </h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Contact Form -->
+                    <div class="order-2 lg:order-1">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg">
+                            <form id="contact-form" class="space-y-6">
+                                <div class="space-y-4">
+                                    <div>
+                                        <label for="name" class="block text-brown font-semibold mb-2">Name</label>
+                                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brown focus:border-transparent">
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-brown font-semibold mb-2">Email</label>
+                                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brown focus:border-transparent">
+                                    </div>
+                                    <div>
+                                        <label for="subject" class="block text-brown font-semibold mb-2">Subject</label>
+                                        <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brown focus:border-transparent">
+                                    </div>
+                                    <div>
+                                        <label for="message" class="block text-brown font-semibold mb-2">Message</label>
+                                        <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brown focus:border-transparent resize-none"></textarea>
+                                    </div>
+                                </div>
+                                <button type="submit" class="bg-brown text-white px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all duration-300 mt-6">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                    <!-- Find Me Online -->
+                    <div class="order-1 lg:order-2">
+                        <div class="bg-white p-8 rounded-2xl shadow-lg h-full flex flex-col">
+                            <h3 class="text-2xl font-bold text-brown mb-6">Find Me Online</h3>
+                            
+                            <div class="space-y-6 flex-grow">
+                                <a href="https://www.instagram.com/its_a_twin_thing_uk/" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-pink-50 rounded-xl hover:bg-pink-100 transition-colors">
+                                    <div class="w-20 h-20 bg-pink-200 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fab fa-instagram text-pink-600 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-800 font-medium">@its_a_twin_thing_uk</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.youtube.com/@Its_A_Twin_Thing_UK" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-red-50 rounded-xl hover:bg-red-100 transition-colors">
+                                    <div class="w-20 h-20 bg-red-200 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fab fa-youtube text-red-600 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-800 font-medium">It's a Twin Thing UK</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://www.threads.com/@its_a_twin_thing_uk?xmt=AQF0BG7B1QUDaRhQmDbGCyKAzTh9zWQbwzrdOorgekMkrLk" target="_blank" rel="noopener noreferrer" class="flex items-center p-4 bg-purple-50 rounded-xl hover:bg-purple-100 transition-colors">
+                                    <div class="w-20 h-20 bg-purple-200 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fab fa-threads text-purple-600 text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-800 font-medium">@its_a_twin_thing_uk</p>
+                                    </div>
+                                </a>
+                                
+                                <a href="mailto:zoe@itsatwinthing.co.uk" class="flex items-center p-4 bg-brown-50 rounded-xl hover:bg-brown-100 transition-colors">
+                                    <div class="w-20 h-20 bg-brown-200 rounded-full flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-brown text-3xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-gray-800 font-medium">zoe@itsatwinthing.co.uk</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="section-bg-brown text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="Assets/logo.JPG" alt="It's a Twin Thing Logo" class="h-20 mr-3 filter brightness-0 invert">
+                    </div>
+                </div>
+                
+                <nav class="flex flex-wrap justify-center gap-4 md:gap-8 mb-6 md:mb-0">
+                    <a href="#home" class="hover:text-pink">Home</a>
+                    <a href="#about" class="hover:text-pink">About</a>
+                    <a href="#services" class="hover:text-pink">Services</a>
+                    <a href="#blog" class="hover:text-pink">Blog</a>
+                    <a href="#contact" class="hover:text-pink">Contact</a>
+                </nav>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/its_a_twin_thing_uk/" target="_blank" rel="noopener noreferrer" class="text-white hover:text-pink text-3xl"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@Its_A_Twin_Thing_UK" target="_blank" rel="noopener noreferrer" class="text-white hover:text-pink text-3xl"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.threads.com/@its_a_twin_thing_uk?xmt=AQF0BG7B1QUDaRhQmDbGCyKAzTh9zWQbwzrdOorgekMkrLk" target="_blank" rel="noopener noreferrer" class="text-white hover:text-pink text-3xl"><i class="fab fa-threads"></i></a>
+                    <a href="mailto:zoe@itsatwinthing.co.uk" class="text-white hover:text-pink text-3xl"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="border-t border-brown-300 pt-8 text-center">
+                <p>&copy; 2025 It's a Twin Thing – Zoe. All rights reserved.</p>
+                <p class="mt-4 text-sm text-white text-opacity-70">
+                    Built by <a href="https://thefreewebsitewizards.com/?fbclid=PAZXh0bgNhZW0CMTEAAad0Jm-GNlXnPPJ1LVG1DBVBoUGdRHC5m3FFwUqGHjUfujAnDPDhsINN8mAv1A_aem_owWh2qpkEErFPYCqV9cPEg" target="_blank" class="text-pink hover:text-white transition-colors duration-300 font-semibold">The Free Website Wizards</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden" style="z-index: 9999 !important;">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center shadow-2xl transform transition-all duration-300 scale-95 opacity-0" id="modalContent">
+            <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-brown" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7V9C15 11.8 12.8 14 10 14S5 11.8 5 9V7L3 7V9C3 12.9 6.1 16 10 16S17 12.9 17 9Z"/>
+                </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-brown mb-4">Coming Soon!</h3>
+            <p class="text-gray-600 mb-6">This feature is currently under development. Please check back soon for updates!</p>
+            <button onclick="closeModal()" class="bg-brown text-white py-2 px-6 rounded-full font-semibold hover:bg-brown-dark transition-colors duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- Coming Soon Modal -->
+    <div id="comingSoonModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-2xl p-8 max-w-md mx-4 text-center shadow-2xl transform transition-all duration-300 scale-95 opacity-0" id="modalContent">
+            <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span class="text-2xl">😊</span>
+            </div>
+            <h2 class="text-2xl font-bold text-brown mb-4">Coming Soon!</h2>
+            <p class="text-gray-600 mb-6">This feature is currently under development. Please check back soon for updates!</p>
+            <button onclick="hideComingSoonModal()" class="bg-brown text-white py-3 px-8 rounded-full font-semibold hover:bg-brown-dark transition-colors duration-300">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function showComingSoonModal() {
+            console.log('showComingSoonModal called');
+            const modal = document.getElementById('comingSoonModal');
+            const modalContent = document.getElementById('modalContent');
+            if (modal && modalContent) {
+                modal.classList.remove('hidden');
+                // Force reflow
+                modal.offsetHeight;
+                // Add animation classes
+                modalContent.classList.remove('scale-95', 'opacity-0');
+                modalContent.classList.add('scale-100', 'opacity-100');
+                console.log('Modal should be visible now');
+            } else {
+                console.error('Modal element not found');
+            }
+        }
+        
+        function hideComingSoonModal() {
+            const modal = document.getElementById('comingSoonModal');
+            const modalContent = document.getElementById('modalContent');
+            if (modal && modalContent) {
+                modalContent.classList.remove('scale-100', 'opacity-100');
+                modalContent.classList.add('scale-95', 'opacity-0');
+                setTimeout(() => {
+                    modal.classList.add('hidden');
+                }, 300);
+            }
+        }
+        
+        // Wait for DOM to load before adding event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('comingSoonModal');
+            if (modal) {
+                // Close modal when clicking outside
+                modal.addEventListener('click', function(e) {
+                    if (e.target === this) {
+                        hideComingSoonModal();
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
