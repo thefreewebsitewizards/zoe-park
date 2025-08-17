@@ -360,4 +360,27 @@ h1, h2, h3, h4 {
         height: 2.5rem;
         font-size: 1rem;
     }
+    
+    /* Hero section mobile optimization */
+    #home {
+        min-height: 100vh;
+        height: auto;
+    }
+    
+    #home .absolute.inset-0 {
+        background-size: cover !important;
+        background-position: center !important;
+        background-attachment: scroll !important;
+    }
+    
+    #home .container {
+        min-height: 100vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    #home .flex.items-center.justify-center {
+        min-height: 100vh;
+        align-items: center;
+    }
 }
